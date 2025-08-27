@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1600px, 100vw);
+    background-repeat: no-repeat;
+    padding-bottom: 5em;
+    position: relative;
+}
+
+.main .box {
+    inset: 0;
+    width: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 65vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 105px;
+    padding:0.25em;
+    overflow: none;
+    margin-bottom: 6.5em;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-buttons{
+    position: relative;
+    z-index: 10;
+    max-height: 2.75em;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100%-75px);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    gap:27px;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.hero> :first-child{
+    font-weight:900;
+    font-size: 42px;
+}
+
+.hero> :nth-child(2){
+    font-weight:400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3){
+    font-weight:400;
+    font-size: 20px;
+}
+
+.btn{
+    padding:0.05em 1em;
+    opacity: 1;
+    background-color: transparent;
+    border-color: white;
+    border-width: 0.15em;
+    border-radius: 0.25em;
+    color: white;
+    margin: 0 0.75em;
+    cursor: pointer;
+}
+
+.red-btn{
+background-color: red;
+color:white;
+border-radius: 0.25em;
+padding:0.05em 1em;
+overflow: hidden;
+cursor: pointer;
+}
+
+.get{
+    height:3em;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.email{
+    padding-right: 12em;
+    height:2.75em;
+    cursor:auto;
+    
+}
+.email::placeholder {
+  font-weight: 200;
+  color:white;
+}
+
+.sep{
+    height:5px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 10;
+}
